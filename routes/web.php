@@ -40,3 +40,36 @@ Route::group(['prefix'=>'blog'],   function(){
                             })->name('show');
 
 });
+
+
+//routes methods
+// 1, Get // Get data from the server
+// 2. POST //submit or store data
+// 3. PUT // update data
+// 4. PATCH // update data update only one row in a database
+// 5. DELETE // delete data from the server
+
+  Route::get('s',function () {
+                        return "Blog show Page";
+                            });
+
+                            
+Route::post('p',function(){
+
+    return "POST";
+});
+
+Route::put('put-route',function(){
+
+    return "POST";
+});
+
+
+//fallback route
+//used to redirect someone after not finding the right page 403 or 404
+Route::fallback(function(){
+return"oops we couldnt find the page";
+
+});
+                            
+
