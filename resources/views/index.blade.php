@@ -10,5 +10,6 @@
     <h1>I am Home</h1>
     <a href="{{ route('user',['id'=>1,'slug' =>'100']) }}">User</a>
     <a href="{{ route('about') }}">About</a>
+    <a href="contact">contact</a>
 </body>
 </html>

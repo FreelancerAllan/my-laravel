@@ -4,8 +4,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
      return view('index');
          });
-        
-        
+        // contact blade file inside the contact folder
+         Route::get('/contact', function () {
+            return view('contact.contact');
+                });
         
         
             //http://127.0.0.1:8000/about
