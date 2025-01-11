@@ -19,12 +19,13 @@
 </body>
 </html>
 
+
+{{-- Comments--}}
+{{-- 
+
 //echo something       
 {{  }} 
 
 
-//comment  
-
-{{-- Comments--}}
-
+--}}
 

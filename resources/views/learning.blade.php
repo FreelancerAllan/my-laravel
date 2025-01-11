@@ -2,6 +2,7 @@
     <!-- Smile, breathe, and go slowly. - Thich Nhat Hanh -->
 </div>
 
+{{-- 
 
 //normal php
 if(){
@@ -20,3 +21,7 @@ endif
 
 //normal 
 <?php ?>
+
+
+
+--}}
