@@ -16,6 +16,7 @@
     <a href="{{ route('user',['id'=>1,'slug' =>'100']) }}">User</a>
     <a href="{{ route('about') }}">About</a>
     <a href="contact">contact</a>
+    <a href="welcome">welcome</a>
 </body>
 </html>
 
