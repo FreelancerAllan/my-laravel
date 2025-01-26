@@ -1,10 +1,17 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Singlecontroller;
 use Illuminate\Support\Facades\Route;
-Route::get('/', function () {
-     return view('index');
-         });
 
+//using controller to display index.blade.php view file as function method this helps to make codes small
+Route::get('/', [HomeController::class,'index']);
+
+//singleaction controller has always one method
+Route::get('/single-action', Singlecontroller::class);
+
+
+//routes without using ciontroller its not a must to use controller
          Route::get('/welcome', function () {
             return view('welcome');
                 });
