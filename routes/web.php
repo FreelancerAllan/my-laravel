@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\blog;
+use App\Http\Controllers\Blogcontroller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Singlecontroller;
 use Illuminate\Support\Facades\Route;
@@ -85,5 +87,8 @@ Route::fallback(function(){
 return"oops we couldnt find the page";
 
 });
+
+//blog CRUD Resource Controller
+Route::resource('/blog',Blogcontroller::class);
                             
 
