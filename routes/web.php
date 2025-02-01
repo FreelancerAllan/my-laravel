@@ -4,6 +4,7 @@ use App\Http\Controllers\blog;
 use App\Http\Controllers\Blogcontroller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Singlecontroller;
+use App\Models\blog as ModelsBlog;
 use Illuminate\Support\Facades\Route;
 
 //using controller to display index.blade.php view file as function method this helps to make codes small
@@ -90,5 +91,17 @@ return"oops we couldnt find the page";
 
 //blog CRUD Resource Controller
 Route::resource('/blog',Blogcontroller::class);
+
+
+//working with the model
+Route::get('/blogmodel',function(){
+
+//query that will run SELECT * FROM blogs    
+$blogs= ModelsBlog::all();
+
+//function in laravel to display data 
+dd($blogs);
+
+});
                             
 
