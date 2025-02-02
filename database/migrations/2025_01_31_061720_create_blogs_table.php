@@ -17,6 +17,7 @@ return new class extends Migration
             //in laravel varchar is called string not normal php wehere its called varhar
             $table->string('title');
             $table->text('description');
+            $table->text('status');
             $table->timestamps();
             //more data types
             //integer
